@@ -1,0 +1,18 @@
+# Python 3.12; exact versions validated locally. Includes test/build tools.
+colorama==0.4.6
+iniconfig==2.1.0
+joblib==1.4.2
+numpy==2.2.6
+packaging==24.2
+pandas==2.2.3
+pluggy==1.5.0
+pytest==8.3.5
+python-dateutil==2.9.0.post0
+pytz==2025.2
+scikit-learn==1.6.1
+scipy==1.15.3
+setuptools==78.1.0
+six==1.17.0
+threadpoolctl==3.6.0
+tzdata==2025.2
+wheel==0.45.1

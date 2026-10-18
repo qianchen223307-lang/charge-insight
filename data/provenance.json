@@ -1,0 +1,48 @@
+{
+  "dataset": "UrbanEV",
+  "repository": "https://github.com/IntelligentSystemsLab/UrbanEV",
+  "commit": "44f2aa0c8d89f192bce00bafb0def74a21b39c68",
+  "license": "CC0-1.0",
+  "regions": [
+    "102",
+    "104",
+    "105",
+    "106",
+    "107",
+    "108",
+    "109",
+    "110",
+    "111",
+    "115",
+    "123",
+    "124",
+    "202",
+    "204",
+    "205",
+    "206"
+  ],
+  "selection": "First 16 columns of the pinned official occupancy.csv; independent of forecast scores",
+  "acquisition": "Exact UTF-8 bytes acquired via the GitHub blob API and verified against pinned source Git blob hashes before subsetting.",
+  "sources": [
+    {
+      "path": "occupancy.csv",
+      "url": "https://raw.githubusercontent.com/IntelligentSystemsLab/UrbanEV/44f2aa0c8d89f192bce00bafb0def74a21b39c68/data/occupancy.csv",
+      "git_blob_sha1": "d1f03f65919fa1bf2872c5bb8b500cb90e7d71fb",
+      "sha256": "1b9099b8c6c33510a2c48a79c4b524b01f6a2f5df45b9d604361b22ad4bc5211",
+      "bytes": 5513676
+    },
+    {
+      "path": "inf.csv",
+      "url": "https://raw.githubusercontent.com/IntelligentSystemsLab/UrbanEV/44f2aa0c8d89f192bce00bafb0def74a21b39c68/data/inf.csv",
+      "git_blob_sha1": "4b9efa0f831f7e7c039c907f86d9a52f9aa0a686",
+      "sha256": "03c9830965e9e99b29adfb8cceed0eba98d37631f514273cb3fe61f80d63de7c",
+      "bytes": 74446
+    }
+  ],
+  "files": {
+    "urbanev_first16.csv": "61bd8709186a1ee819096e0ed0a324f5433454cc874f3ee14e5d18c598fadb71",
+    "capacities.csv": "0d627693f8543d166d1417f1f42a826c330652b9d18243a0579b64f046aa95a5"
+  },
+  "normalization": "sum station charge_count by TAZID, then divide regional raw occupied-pile counts by capacity",
+  "source_preprocessing": "Author-cleaned data includes outlier replacement and forward/backward filling; original missingness masks are unavailable."
+}

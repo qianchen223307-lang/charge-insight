@@ -1,0 +1,23 @@
+{
+  "persistence": {
+    "split": "test",
+    "region": "all",
+    "mae_percentage_points": 1.0682219208906214,
+    "rmse_percentage_points": 2.357015975029636,
+    "n_predictions": 10752
+  },
+  "seasonal24": {
+    "split": "test",
+    "region": "all",
+    "mae_percentage_points": 3.6312410014992205,
+    "rmse_percentage_points": 5.50842318366223,
+    "n_predictions": 10752
+  },
+  "hist_gradient_boosting": {
+    "split": "test",
+    "region": "all",
+    "mae_percentage_points": 1.6460552151906709,
+    "rmse_percentage_points": 2.6402276591941134,
+    "n_predictions": 10752
+  }
+}
